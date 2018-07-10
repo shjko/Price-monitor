@@ -11,5 +11,7 @@ RUN echo -e 'https://mirror.tuna.tsinghua.edu.cn/alpine/v3.7/main/\nhttps://mirr
 	libxslt-dev \
 && pip install  -i https://pypi.tuna.tsinghua.edu.cn/simple -r /tmp/requirements.txt
 
+CMD ["python", "/PriceMonitor/"]
+
+
 VOLUME /PriceMonitor
-EXPOSE 80
